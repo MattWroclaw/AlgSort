@@ -1,0 +1,21 @@
+A := [...]      { n-elementowa tablica uporzadkowana }
+lewo := 1       { indeks poczatku przedzialu }
+prawo := n    { indeks konca przedzialu - poczatkowo cala tablica A }
+
+y := poszukiwana wartosc
+indeks := pusty
+
+while lewo < prawo do
+   begin
+      srodek := (lewo + prawo) div 2; { dzielenie calkowitoliczbowe }
+      
+      if A[srodek] < y then
+         lewo := srodek + 1
+      else
+         prawo := srodek;
+   end;
+
+if A[lewo] = y then
+   indeks := lewo
+else
+   indeks := brak;
