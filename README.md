@@ -2,7 +2,6 @@
 
 ## Autor : Aleksander Zdybel
 
-
 ### Budowanie projektu : 
 ##### git clone https://github.com/ZdybelA/Algorithms.git
 ##### cd Algorithms/
